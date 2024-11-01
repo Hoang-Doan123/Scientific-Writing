@@ -7,9 +7,10 @@ Members
 ==============================
 |ID|Name|
 |-|-|
-|BA12-035|Tran Viet Cuong|
-|BA12-078|Đoan Đuc Hoang|
+|22BI13053|Nguyen Quang Bach|
+|BA12-022|Nguyen Vu The Binh|
+|BA12-078|Doan Đuc Hoang|
 |BA12-088|Nguyen Vu Gia Huy|
 |BA12-102|Duong Đam Lam|
-|BA12-127|Trinh Quang Minh|
+|BA12-179|Tran Duc Trung|
 |BA12-192|Nguyen Quoc Viet|
