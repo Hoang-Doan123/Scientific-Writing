@@ -31,11 +31,32 @@ body {
 }
 
 .navigation-bar-container {
-    display: flex;                                  /* Flex: make element in-line*/
-    justify-content: space-between;                 /* */
+    display: flex;
     align-items: center;
     padding: 10px 20px;
-    height: 60px;
+    justify-content: space-between; 
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 20px;
+   
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
+.social-icon {
+    cursor: pointer;
+}
+
+.social-icon img {
+    transition: transform 0.2s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
 }
 
 .back-arrow-button, .setting_button_container {

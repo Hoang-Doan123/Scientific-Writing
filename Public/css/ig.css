@@ -32,10 +32,31 @@ body {
 
 .navigation-bar-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    height: 60px;
+    justify-content: space-between; 
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 20px;
+   
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* Giữ nguyên các CSS khác */
+.social-icon {
+    cursor: pointer;
+}
+
+.social-icon img {
+    transition: transform 0.2s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
 }
 
 .back-arrow-button, .setting_button_container {
@@ -71,11 +92,13 @@ body {
 .ig-analysis-container {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 0;
+    padding: 10px; 
 }
 
 .interaction-analytics {
-    padding: 1rem;
-    margin: 10px 15px;
+    padding: 0.75rem; 
+    margin: 5px; 
     border: 1px solid var(--main-box-shadow-color);
     width: max-content;
     height: max-content;
@@ -95,7 +118,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 210px);
     grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap: 8px;
 }
 
 .interaction-analytics-box {
@@ -195,8 +218,8 @@ body {
 }
 
 .circle-analysis-container {
-    margin: 15px;
-    padding: 15px;
+    margin: 5px; 
+    padding: 10px; 
     border-radius: var(--main-border-raidus);
     border: 1px solid var(--main-box-shadow-color);
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
@@ -314,9 +337,9 @@ body {
     align-items: center;
     justify-items: center;
     border: 1px solid var(--main-box-shadow-color);
-    border-radius: 20px;
-    padding: 1rem;
-    margin: 10px 15px;
+    border-radius: var(--main-border-raidus);
+    padding: 0.75rem; 
+    margin: 5px; 
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -362,7 +385,7 @@ body {
 .pillar-analysis-container {
     border: 1px solid var(--main-box-shadow-color);
     border-radius: var(--main-border-raidus);
-    margin: 10px 15px;
+    margin: 5px; 
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -370,7 +393,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 15px;
+    padding: 5px 0;
     color: var(--title-color);
     cursor: pointer;
 }
