@@ -22,6 +22,12 @@ twitterCard.addEventListener('click', () => {
     window.location.href = "./twitter.html"
 })
 
+const addnewsocialmediaCard = document.querySelector('.add_card')
+
+addnewsocialmediaCard.addEventListener('click', () => {
+    window.location.href = "./addnewsocialmedia.html"
+})
+
 // document.getElementById('settingButton').addEventListener('click', function() {
 //     window.location.href = 'mainsetting.html';
 // });

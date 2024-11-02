@@ -75,6 +75,7 @@ body, html {
 
 /* Main title of dashboard */
 .dashboard_title {
+    margin-top: -40px;
     text-align: center;
     font-size: 70px;
     font-weight: bold;
@@ -101,16 +102,19 @@ button {
     transition: box-shadow, background-color 0.2s ease-in-out; 
 }
 
-button:hover {
+/* button:hover {
     box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2); 
     background-color: #f2f2f2;
-}
+} */
 
 /* Make sure every card has the same size and style */
 .facebook_card,
 .instagram_card,
 .youtube_card,
-.twitter_card {
+.twitter_card ,
+.add_card{
+    margin-top: 20px;
+    margin-inline: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,9 +123,7 @@ button:hover {
 }
 
 .facebook_card {
-    background-image: url('Public/Images/facebook_background.jpg'); 
-    background-size: cover;
-    background-position: center;
+    background-color: #1877F2;
 }
 
 .instagram_card {
@@ -131,28 +133,49 @@ button:hover {
 }
 
 .youtube_card {
-    background-image: url('Public/Images/youtube_background.jpg'); 
-    background-size: cover;
-    background-position: center;
-}
-
-.youtube_card p {
-    color: white;
+    background-color: #FF0000;
 }
 
 .twitter_card {
-    background-image: url('Public/Images/twitter_background.jpg'); 
-    background-size: cover;
-    background-position: center;
+    background-color: black;
 }
 
-.twitter_card p {
+.facebook_card p,
+.instagram_card p,
+.youtube_card p,
+.twitter_card p,
+.add_card p {
+    font-size: 20px;
     color: white;
 }
 
+.add-button {
+    width: 30px; /* Set width as needed */
+    height: 30px; /* Set height as needed */
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    background-color: #4CAF50; /* Change color as needed */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    margin-top: 10px; /* Space between text and add button */
+}
+
+.add-button:hover {
+    background-color: white; /* Darker shade on hover */
+}
+
+.social_media_name,
 .nickname {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
+}
+
+.circular_img {
+    width: 125px; 
+    height: 125px; 
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
 .background-video {
