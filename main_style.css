@@ -119,19 +119,19 @@ button:hover {
 }
 
 .facebook_card {
-    background-image: url('Public/Images/facebook_background.jpg'); /* Replace with your image path */
+    background-image: url('Public/Images/facebook_background.jpg'); 
     background-size: cover;
     background-position: center;
 }
 
 .instagram_card {
-    background-image: url('Public/Images/instagram_background.jpg'); /* Replace with your image path */
+    background-image: url('Public/Images/instagram_background.jpg'); 
     background-size: cover;
     background-position: center;
 }
 
 .youtube_card {
-    background-image: url('Public/Images/youtube_background.jpg'); /* Replace with your image path */
+    background-image: url('Public/Images/youtube_background.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -141,7 +141,7 @@ button:hover {
 }
 
 .twitter_card {
-    background-image: url('Public/Images/twitter_background.jpg'); /* Replace with your image path */
+    background-image: url('Public/Images/twitter_background.jpg'); 
     background-size: cover;
     background-position: center;
 }
