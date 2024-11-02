@@ -75,7 +75,7 @@ const dlc = new DrawLineChart(
     ['rgb(75, 192, 192)'],
     ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept'],
     "",
-    colorTheme === "dark-mode" ? "dark-mode" : "light-mode",
+    colorTheme === "light-mode" ? "light-mode" : "dark-mode",
     [...randomNumberArray(32, 60, 160), 158]
 )
 
@@ -92,7 +92,7 @@ const dlc2 = new DrawLineChart(
     ["rgb(75, 192, 192)"],
     ["May", "Jun", "Jul", "Aug", "Sep"],
     "M",
-    colorTheme === "dark-mode" ? 'dark-mode' : 'light-mode', 
+    colorTheme === "light-mode" ? 'light-mode' : 'dark-mode', 
     [...randomNumberArray(16, 50, 150), 117]
 )
 

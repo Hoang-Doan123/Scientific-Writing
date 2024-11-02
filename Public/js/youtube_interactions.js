@@ -91,7 +91,7 @@ const dlc = new DrawLineChart(
     ['rgb(33, 102, 51)'],
     ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
     "",
-    localStorage.getItem("theme") === "dark-mode" ? "dark-mode" : "light-mode",
+    localStorage.getItem("theme") === "light-mode" ? "light-mode" : "dark-mode",
     [...randomNumberArray(32, 40, 170), 168]
 )
 
@@ -108,7 +108,7 @@ const dlc2 = new DrawLineChart(
     ["rgb(35, 35, 176)"],
     ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
     "",
-    localStorage.getItem("theme") === "dark-mode" ? "dark-mode" : "light-mode",
+    localStorage.getItem("theme") === "light-mode" ? "light-mode" : "dark-mode",
     [...randomNumberArray(39, 30, 180), 102]
 )
 

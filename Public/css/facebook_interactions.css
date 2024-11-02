@@ -23,8 +23,8 @@ body {
     --inner-circle-diameter: 115px;
     --double-pillar-width: 60px;
     --double-pillar-gap: 24px;
-    --main-background: #ffffff; 
-    --title-color: #000000; 
+    --main-background: #000000; 
+    --title-color: #ffffff; 
     --image-filter: brightness(0) invert(0);
 }
 
@@ -40,6 +40,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     height: 60px;
+    background-color: white;
 }
 
 .back-arrow-button, .setting_button_container {
@@ -49,8 +50,8 @@ body {
 }
 
 .fb-logo-container {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .back-arrow-button img, .setting_button_container img, .fb-logo-container img {
@@ -126,8 +127,9 @@ body {
 }
 
 .circle-chart-container {
-    margin: 0.5rem 1rem;
-    padding: 0.5rem 1rem;
+    width: 600px;
+    /* margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,6 +156,15 @@ body {
 
 .color-description {
     padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    animation: upAppear 1.1s ease-in-out;
+}
+
+
+.color-description2 {
+    padding: 0 6px;
     display: grid;
     align-items: center;
     justify-items: flex-start;
@@ -164,6 +175,10 @@ body {
     color: var(--title-color)
 }
 
+.color-description2 h3 {
+    color: var(--title-color)
+}
+
 .circle-chart-footer {
     display: grid;
     grid-template-columns: auto;
@@ -171,6 +186,14 @@ body {
     align-items: center;
     justify-items: flex-start;
     gap: 6px;
+}
+
+.reacts {
+    width: 60px; /* Set width as needed */
+    height: 60px; /* Set height as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 .pillar-analysis {

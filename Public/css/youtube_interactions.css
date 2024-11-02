@@ -23,8 +23,8 @@ body {
     --inner-circle-diameter: 115px;
     --double-pillar-width: 60px;
     --double-pillar-gap: 24px;
-    --main-background: #ffffff; 
-    --title-color: #000000; 
+    --main-background: #000000; 
+    --title-color: #ffffff; 
     --image-filter: brightness(0) invert(0);
 }
 
@@ -50,8 +50,8 @@ body {
 }
 
 .youtube-logo-container {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .back-arrow-button img, .setting_button_container img, .youtube-logo-container img {

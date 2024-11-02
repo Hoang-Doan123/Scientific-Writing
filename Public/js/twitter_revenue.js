@@ -36,7 +36,7 @@ const dlc = new DrawLineChart(
     ['rgb(33, 102, 51)'],
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
     "K",
-    localStorage.getItem("theme") === "dark-mode" ? "dark-mode" : "light-mode",
+    localStorage.getItem("theme") === "light-mode" ? "light-mode" : "dark-mode",
     [...randomNumberArray(32, 40, 170), 153]
 )
 

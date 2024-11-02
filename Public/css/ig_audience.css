@@ -21,8 +21,8 @@ body {
     --pillar-gap: 16px;
     --outer-circle-diameter: 190px;
     --inner-circle-diameter: 130px;
-    --main-background: #ffffff; 
-    --title-color: #000000; 
+    --main-background: #000000; 
+    --title-color: #ffffff; 
     --image-filter: brightness(0) invert(0);
 }
 
@@ -38,6 +38,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     height: 60px;
+    background-color: white;
 }
 
 .back-arrow-button, .setting_button_container {
@@ -48,8 +49,8 @@ body {
 
 
 .ig-logo-container {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
