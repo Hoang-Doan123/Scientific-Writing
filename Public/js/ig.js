@@ -1,3 +1,20 @@
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = window.location.pathname.split('/').pop();
+    const socialIcons = document.querySelectorAll('.social-icon');
+
+    socialIcons.forEach(icon => {
+        if (icon.getAttribute('href') === currentPage) {
+            icon.classList.add('active');
+        }
+    });
+});
+
+
+
+
+
 /**
  * A dataset to build up bar chart. 
 */
@@ -56,6 +73,7 @@ if (colorTheme === "dark-mode") {
         document.body.classList.remove("dark-mode")
     }
 }
+
 
 /**
  * Declaring root element to get the custom properties value.
