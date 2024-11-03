@@ -1,9 +1,111 @@
 /* Basic styling */
 body {
+  background-image: url('/Public/Images/background_image.png'); 
+  background-size: cover;
+  background-position: center;
     font-family: Arial, sans-serif;
     transition: margin-left 0.3s;
     height: 100vh;
   }
+
+.root {
+  --image-filter: brightness(0) invert(1);
+}
+
+  /* Điều chỉnh màu của social icon khi hover */
+.social-icon:hover::after,
+.social-icon.active::after {
+    background-color: #000000; /* Đổi màu gạch chân thành đen */
+}
+
+/* Điều chỉnh hiệu ứng drop shadow cho icon active */
+.social-icon.active img {
+    -webkit-filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-icon {
+    cursor: pointer;
+    position: relative;
+    opacity: 0.6; 
+    transition: all 0.3s ease; 
+}
+
+.social-icon img {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.social-icon.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.social-icon.active img {
+    filter: brightness(1.2);
+  
+    -webkit-filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+
+.social-icon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.social-icon:hover::after,
+.social-icon.active::after {
+    width: 100%;
+}
+
+
+.dark-mode .social-icon.active img {
+    -webkit-filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}
+
+.increase-icon-header, .decrease-icon-header {
+    width: 20px;
+    height: 30px;
+}
+
+.increase-icon-header img {
+    color: green;
+}
+
+.decrease-icon-header img{
+    color: red;
+}
+
+.back-arrow-button, .setting_button_container {
+  max-width: 32px;
+  max-height: 32px;
+  cursor: pointer;
+}
+
+.back-arrow-button img, .setting_button_container img, .ig-logo-container img {
+  width: 100%;
+  height: 100%;
+}
   
   /* Open menu button */
   #openNav {
@@ -71,7 +173,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
     padding: 15px;
     color: white;
     width: 100%;
@@ -85,7 +187,7 @@ body {
     font-size: 20px;
     background: none;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
   }
   
@@ -129,6 +231,7 @@ body {
     padding: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+    background-color: white;
   }
 
   .table-container {
@@ -158,12 +261,14 @@ body {
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     gap: 8px;
+    background-color: white;
   }
 
   .word {
     font-size: 15px;
     margin-top: 5px;
     text-align: center;
+    color: white;
   }
 
   .change {

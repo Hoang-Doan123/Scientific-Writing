@@ -5,15 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Side Navigation Bar</title>
   <link rel="stylesheet" href="Public/css/main_interface_2.css">
+  <script defer src="Public/js/main_interface_2.js"></script>
 </head>
 <body>
     <div class="top-nav">
-        <button id="sideNavToggle" class="nav-button">&#9776;</button>
-        <div class="head-logo">
-            <p>Social Media Dashboard</p>
+        <!-- <button id="sideNavToggle" class="nav-button">&#9776;</button> -->
+        <div class="back-arrow-button" id="back-button">
+          <img src="Public/Images/home_icon.png">
+        </div>
+        <div class="social-icons-container">
+            <a href="facebook.html" class="social-icon" data-platform="facebook">
+                <img src="Public/Images/Logo Fb.png" height="30px" width="80px">
+            </a>
+            <a href="ig.html" class="social-icon" data-platform="instagram">
+                <img src="Public/Images/Logo Ig.png" height="30px" width="75px">
+            </a>
+            <a href="youtube.html" class="social-icon" data-platform="youtube">
+                <img src="Public/Images/Media/imgbin_youtube-live-logo-png.png" height="30px" width="80px">
+            <a href="twitter.html" class="social-icon" data-platform="twitter">
+                <img src="Public/Images/Media/X.jpg" height="25px" width="60px">
+            </a>
+            <a href="main_interface_2.html" class="social-icon" >
+                <img src="Public/Images/Media/UpArrow.png" alt="" class="increase-icon-header">
+                <img src="Public/Images/Media/DownArrow.png" alt="" class="decrease-icon-header">
+            </a>
         </div>
         <div class="setting_btn" id="settingButton">
-            <img src="Public/Images/setting_icon.png" height="30px"> <!-- Adjust height as needed -->
+            <!-- <img src="Public/Images/setting_icon.png" height="30px">  -->
         </div>
       </div>
 
@@ -24,7 +42,7 @@
             <td>
               <div class="column-logo">
                 <div class="column-logo-container">
-                  <img src="Public/Images/Media/PostsIcon.png" style="max-height: 30px;">
+                  <img src="Public/Images/Media/PostsIcon.png" style="max-height: 30px; filter: brightness(0) invert(1);">
                 </div>
               </div>
               <div class="word">Posts</div>
@@ -32,7 +50,7 @@
             <td>
               <div class="column-logo">
                 <div class="column-logo-container">
-                  <img src="Public/Images/Media/FollowersIcon.png" style="max-height: 30px;">
+                  <img src="Public/Images/Media/FollowersIcon.png" style="max-height: 30px; filter: brightness(0) invert(1);">
                 </div>
               </div>
               <div class="word">Followers</div>
@@ -40,7 +58,7 @@
             <td>
               <div class="column-logo">
                 <div class="column-logo-container">
-                  <img src="Public/Images/Media/FollowingsIcon.png" style="max-height: 30px;">
+                  <img src="Public/Images/Media/FollowingsIcon.png" style="max-height: 30px; filter: brightness(0) invert(1);">
                 </div>
               </div>
               <div class="word">Followings</div>
@@ -48,7 +66,7 @@
             <td>
               <div class="column-logo">
                 <div class="column-logo-container">
-                  <img src="Public/Images/Media/ShareIcon.png" style="max-height: 30px;">
+                  <img src="Public/Images/Media/ShareIcon.png" style="max-height: 30px; filter: brightness(0) invert(1);">
                 </div>
               </div>
               <div class="word">Shares/Reposts</div>
@@ -56,7 +74,7 @@
             <td>
               <div class="column-logo">
                 <div class="column-logo-container">
-                  <img src="Public/Images/Media/RevenueIcon.png" style="max-height: 30px;">
+                  <img src="Public/Images/Media/RevenueIcon.png" style="max-height: 30px; filter: brightness(0) invert(1);">
                 </div>
               </div>
               <div class="word">Revenue</div>

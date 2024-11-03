@@ -116,6 +116,18 @@ body {
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
 }
 
+.increase-icon, .decrease-icon {
+    width: 20px;
+    height: 30px;
+}
+
+.increase-icon img {
+    color: green;
+}
+
+.decrease-icon img{
+    color: red;
+}
 
 .back-arrow-button, .setting_button_container {
     max-width: 32px;

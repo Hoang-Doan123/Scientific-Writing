@@ -1,30 +1,36 @@
-const sideNav = document.getElementById("sideNav");
-const openNavButton = document.getElementById("sideNavToggle");
-const closeNavButton = document.getElementById("closeNav");
-const settingButton = document.getElementById("settingButton")
+// const sideNav = document.getElementById("sideNav");
+// const openNavButton = document.getElementById("sideNavToggle");
+// const closeNavButton = document.getElementById("closeNav");
+// const settingButton = document.getElementById("settingButton")
 
-const logoContainers = document.querySelectorAll(".logo-container")
-const logoRoutes = [
-  "facebook.html",
-  "instagram.html",
-  "youtube.html",
-  "twitter.html"
-];
+// const logoContainers = document.querySelectorAll(".logo-container")
+// const logoRoutes = [
+//   "facebook.html",
+//   "instagram.html",
+//   "youtube.html",
+//   "twitter.html"
+// ];
 
-logoContainers.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    window.location.href = `./${logoRoutes[index]}`
-  })
-})
+// logoContainers.forEach((element, index) => {
+//   element.addEventListener("click", () => {
+//     window.location.href = `./${logoRoutes[index]}`
+//   })
+// })
 
-openNavButton.addEventListener("click", () => {
-  sideNav.style.width = "250px"; // Slide in effect
-});
+// openNavButton.addEventListener("click", () => {
+//   sideNav.style.width = "250px"; // Slide in effect
+// });
 
-closeNavButton.addEventListener("click", () => {
-  sideNav.style.width = "0"; // Slide out effect
-});
+// closeNavButton.addEventListener("click", () => {
+//   sideNav.style.width = "0"; // Slide out effect
+// });
 
-settingButton.addEventListener("click", () => {
-    window.location.href = "./mainsetting.html"
+// settingButton.addEventListener("click", () => {
+//     window.location.href = "./mainsetting.html"
+// })
+
+const backButton = document.getElementById("back-button")
+
+backButton.addEventListener("click", () => {
+    window.location.href = "./main_interface.html"
 })

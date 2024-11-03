@@ -4,11 +4,11 @@ facebookCard.addEventListener('click', () => {
     window.location.href = "./facebook.html"
 })
 
-const dashboardTitle = document.querySelector('.dashboard_title')
+// const dashboardTitle = document.querySelector('.dashboard_title')
 
-dashboardTitle.addEventListener('click', () => {
-    window.location.href = "./main_interface_2.html"
-})
+// dashboardTitle.addEventListener('click', () => {
+//     window.location.href = "./main_interface_2.html"
+// })
 
 const igCard = document.querySelector('.instagram_card')
 

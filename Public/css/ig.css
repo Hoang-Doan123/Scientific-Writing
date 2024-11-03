@@ -57,8 +57,6 @@ body {
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
 }
 
-
-
 .social-icons-container {
     display: flex;
     gap: 70px;
@@ -116,6 +114,19 @@ body {
 .dark-mode .social-icon.active img {
     -webkit-filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}
+
+.increase-icon, .decrease-icon {
+    width: 20px;
+    height: 30px;
+}
+
+.increase-icon img {
+    color: green;
+}
+
+.decrease-icon img{
+    color: red;
 }
 
 .back-arrow-button, .setting_button_container {
