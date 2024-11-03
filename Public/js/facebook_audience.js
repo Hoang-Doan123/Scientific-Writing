@@ -10,7 +10,7 @@ const ctx = canvas.getContext('2d');
 const dlc = new DrawLineChart(
     ctx,
     ["Followers"],
-    [20],
+    [200],
     [START_X - 30],
     ['rgb(75, 192, 192)'],
     ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
@@ -27,7 +27,7 @@ const ctx2 = canvas2.getContext("2d")
 const dlc2 = new DrawLineChart(
     ctx2,
     ["Audiences"],
-    [10],
+    [100],
     [START_X - 30],
     ["rgb(75, 192, 192)"],
     ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],

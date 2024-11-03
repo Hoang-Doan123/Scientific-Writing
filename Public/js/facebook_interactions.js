@@ -86,7 +86,7 @@ if (hasAnimation != null) {
 const dlc = new DrawLineChart(
     ctx,
     ["reacts"],
-    [10],
+    [1000],
     [START_X - 30],
     ['rgb(33, 102, 51)'],
     ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
@@ -103,7 +103,7 @@ const ctx2 = lineChart2.getContext("2d")
 const dlc2 = new DrawLineChart(
     ctx2,
     ["shares"],
-    [3],
+    [300],
     [START_X - 30],
     ["rgb(35, 35, 176)"],
     ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
