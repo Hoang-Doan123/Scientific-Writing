@@ -10,7 +10,7 @@ const ctx = canvas.getContext('2d');
 const dlc = new DrawLineChart(
     ctx,
     ["Followers"],
-    [2000],
+    [200],
     [START_X - 30],
     ['rgb(75, 192, 192)'],
     ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept'],
@@ -27,11 +27,11 @@ const ctx2 = canvas2.getContext("2d")
 const dlc2 = new DrawLineChart(
     ctx2,
     ["Audiences"],
-    [50],
+    [500],
     [START_X - 30],
     ["rgb(75, 192, 192)"],
     ["May", "Jun", "Jul", "Aug", "Sep"],
-    "M",
+    "",
     localStorage.getItem("theme") === "light-mode" ? "light-mode" : "dark-mode",
     [...randomNumberArray(16, 50, 150), 117]
 )
